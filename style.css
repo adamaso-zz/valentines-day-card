@@ -1,0 +1,56 @@
+html {
+    background-color: #eefbf8;
+    background-image: radial-gradient(circle, hsla(0,0%,100%,.1), hsla(0,0%,0%,.75)),
+                      linear-gradient(left, transparent 50%, hsla(0,0%,0%,.01) 50%);
+    background-position: 50% 75%, 50% 50%;
+    background-repeat: no-repeat, repeat;
+    background-size: 150% 150%, 3em 3em;
+    font-size: 100%;
+    min-height: 100%;
+    font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+p {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.card {
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.heart:before {
+    content: '\2665';
+    color: red;
+    font-size: 28px;
+}
+
+.arrow:before {
+    content: '\1F504';
+    color: black;
+    font-size: 60px;
+}
+
+
+#text{
+    font-family: 'Amatic SC', cursive;
+    font-size: 36px;
+}
+
+.container {
+    text-align: center;
+}

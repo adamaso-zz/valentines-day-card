@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Valentine's Day</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="container">
+        <span class="arrow" id="refresh" role="button"></span>
+       <div class="card">
+        <h1>HAPPY VALENTINES DAY!</h1>
+        <div id="phrases">
+            <h2 id="text"></h2>
+        </div>
+        <p><span class="heart"></span> Angela</p>
+       </div>
+    </div>
+</body>
+
+<script>
+    const refreshBtn = document.getElementById('refresh'),
+        textHolder = document.getElementById('text'),
+        textArray = ["Roses are red, My heart is fat<br>Cash me ousside, how bow dah",
+            "Is your name google?<br>Because you have everything I'm searching for",
+            "You still use Internet Explorer?<br>You must like it nice and slow",
+            "Are your pants a compressed file?<br>Because I'd love to unzip them",
+            "You make my software turn into hardware",
+            "Is your name Wi-fi?<br>Because I'm really feeling a connection",
+            "My servers never go down...but I do ;)",
+            "// TODO: You",
+            "You're the CSS to my HTML",
+            "Come to my 127.0.0.1 and I’ll give you sudo access",
+            "I’m just like a global nav<br>I love to be on top"]
+    let randomIndex = 0, previousIndex = 0;
+
+    refreshBtn.onclick = updateText;
+
+    function updateText() {
+        while (randomIndex === previousIndex) {
+            randomIndex = Math.floor(Math.random() * textArray.length);
+        }
+        previousIndex = randomIndex;
+        textHolder.innerHTML = textArray[randomIndex];
+    }
+</script>
+
+</html>
