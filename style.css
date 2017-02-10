@@ -12,6 +12,7 @@ html {
 
 h1 {
     font-size: 72px;
+    padding: 5px;
 }
 
 p {
@@ -20,7 +21,7 @@ p {
 }
 
 .card {
-    width: 700px;
+    width: 75%;
     height: 400px;
     margin: 0 auto;
     padding: 10px;
@@ -45,12 +46,18 @@ p {
     font-size: 60px;
 }
 
-
 #text{
-    font-family: 'Amatic SC', cursive;
     font-size: 36px;
 }
 
 .container {
     text-align: center;
+}
+
+@media (max-width: 600px) { 
+
+    .card {
+        height: 650px;
+    }
+
 }
